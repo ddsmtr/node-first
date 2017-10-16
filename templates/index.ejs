@@ -1,0 +1,59 @@
+<% layout('./layout/main') -%>
+<% block('title', "Интервальные методы однопараметрической оптимизации") -%>
+<div class="container">
+  <div id="error"></div>
+  <div id="wForm">
+    <form name="data">
+      <label>f(x) = <input class="fx_write" type="text" name="fx" placeholder="0.5x^2+4x+2"/></label>
+      <label> Интервал : [ <input class="interval_write" type="text" name="left_border" placeholder="-1"> : <input class="interval_write" type="text" name="right_border" placeholder="1"> ]</label>
+      <label><input id="goform" type="button" value="Вычислить" onclick="goLab1()"/></label>
+    </form>
+  </div>
+  <div id="wTable">
+    <div id="tmp">
+    <table>
+      <tr>
+        <td rowspan="2">Метод</td>
+        <td colspan="3">N</td>
+        <td colspan="3">a</td>
+
+      </tr>
+      <tr>
+        <td>&epsilon;=10<sup>-1</sup></td>
+        <td>&epsilon;=10<sup>-2</sup></td>
+        <td>&epsilon;=10<sup>-3</sup></td>
+        <td>&epsilon;=10<sup>-1</sup></td>
+        <td>&epsilon;=10<sup>-2</sup></td>
+        <td>&epsilon;=10<sup>-3</sup></td>
+      </tr>
+      <tr>
+        <td>Дихотомии</td>
+        <td id="dih_n1"></td>
+        <td id="dih_n2"></td>
+        <td id="dih_n3"></td>
+        <td id="dih_a1"></td>
+        <td id="dih_a2"></td>
+        <td id="dih_a3"></td>
+      </tr>
+      <tr>
+        <td>Золотого сечения</td>
+        <td id="gold_n1"></td>
+        <td id="gold_n2"></td>
+        <td id="gold_n3"></td>
+        <td id="gold_a1"></td>
+        <td id="gold_a2"></td>
+        <td id="gold_a3"></td>
+      </tr>
+      <tr>
+        <td>Равномерного поиска</td>
+        <td id="search_n1"></td>
+        <td id="search_n2"></td>
+        <td id="search_n3"></td>
+        <td id="search_a1"></td>
+        <td id="search_a2"></td>
+        <td id="search_a3"></td>
+      </tr>
+    </table>
+    </div>
+  </div>
+</div>

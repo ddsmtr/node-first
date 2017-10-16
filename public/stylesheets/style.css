@@ -1,0 +1,165 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+.menu-main {
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+}
+.menu-main li {
+  display: inline-block;
+  padding:10px;
+}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:middle;
+}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 8px 0px 8px 0px;
+  margin: 0 21px 0 21px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .1s;
+}
+.menu-main a:visited {
+  color: #424242;
+}
+.menu-main a:hover{
+  color: #088A68;
+}
+header{
+  width: 80%;
+  margin: 0 auto 0 auto; /*20px - как переменную(она + в форме низ) */
+  text-align: center;
+  padding: 40px;
+  font-family: 'PT Sans', sans-serif;
+  color: #424242;
+  /*background-color:#2E2E2E;*/
+}
+#nav{
+  background-color: red;
+}
+
+#wrapper{
+  width: 80%;
+  margin: 20px   auto;
+  background: #fff;
+}
+#error{
+  display:none;
+  background-color: #F5A9A9;
+  margin-bottom: 20px;
+  padding:20px;
+  /*border: 1px solid #B40404; */
+  border-radius: 4px;
+  color: #B40404;
+
+  font: 18px 'PT Sans', sans-serif;
+
+}
+/*наследник от общего*/
+#wForm{
+  background-color: #F2F2F2;/*тоже повтор в табличной обертке +2 следующих*/
+  border: 1px solid #FAFAFA;
+  border-radius: 4px;
+  padding: 35px;
+  margin-bottom: 20px;
+
+  font: 24px 'PT Sans', sans-serif; /*надо выести это в родитель и наследовать*/
+  text-align: center;
+  color:#424242;
+}
+input[type="text"]{
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  height: 40px;
+  font: 20px 'PT Sans', sans-serif;
+}
+label{
+  margin-left : 20px;
+}
+.interval_write{
+  width:35px;
+  text-align: center;
+  font: 18px 'PT Sans', sans-serif;
+}
+.fx_write{
+  text-align: left;
+  width:400px;
+  padding:12px;
+}
+input[type="button"]{
+  height:60px;
+  width:150px;
+  font: 19px 'PT Sans', sans-serif;
+  background: linear-gradient(#088A4B, #088A68);
+  border: 1;
+  color: #fff;
+  border:none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+input[type="button"]:hover{
+  background: linear-gradient(#04B486, #04B45F);
+}
+input[type="text"]:focus{
+  border: 1px solid #088A85;
+}
+#wTable{
+  background-color: #F2F2F2;
+  border: 1px solid #FAFAFA;
+  border-radius: 4px;
+
+
+  font: 24px 'PT Sans', sans-serif;
+  padding:20px;
+}
+#tmp{
+    overflow-x: scroll;
+}
+table{
+  background-color: white;
+  border-collapse: collapse;
+  border: 1px solid #c6c7cc;
+  width:100%;
+  text-align: center;
+  margin-right: 20px;
+}
+th, td {
+  border-collapse: collapse;
+  border: 1px solid #c6c7cc;
+  padding: 15px;
+  text-align: center;
+}
+/*@media screen and (max-width: 640px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+}*/
+#wDop{
+  background-color: #A9F5BC;
+  padding: 30px;
+  display:none;
+
+  text-align: center;
+  font: 'PT Sans', sans-serif;
+  color:#0A2A12;
+  font-weight: bold;
+}
+#error{
+  color:red;
+}
